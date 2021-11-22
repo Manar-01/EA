@@ -1,18 +1,23 @@
-// Get the modal
-var modal = document.getElementById('id01');
-var modal1 = document.getElementById('id02');
+// declare the modal
+var modal;
+
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+
+function getmodal(x){
+  modal = document.getElementById(x);
+  modal.style.display='block';
+//https://www.w3schools.com/howto/howto_css_login_form.asp
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
   }
-  else if(event.target == modal1)
-  modal1.style.display = "none";
 }
 
-function login(){
-  document.getElementById('id01').style.display="none";
-    document.getElementById('id02').style.display="block";
+function login(x,y){
+  document.getElementById(x).style.display="none";
+  document.getElementById(y).style.display="block";
+  getmodal(y);
 }
 
 function checkpass() {
