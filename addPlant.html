@@ -48,7 +48,7 @@
   <form class="bottom forms" action="#" method="post">
     <p class="text"> حتى تحظى بهذه الخاصية عليك بتسجيل الدخول أو إنشاء حساب*</p>
     <div class="log">
-      <button class="Button" type="button" name="button" onclick="document.getElementById('id01').style.display='block'">تسجيل دخول</button>
+      <button class="Button" type="button" name="button" onclick="getmodal('id01');">تسجيل دخول</button>
     </div>
     <div class="row">
       <div class="col-1">
@@ -101,7 +101,7 @@
           <input type="email" name="email" id="email" required autofocus autocomplete placeholder="yourname@example.com"><br>
           <label for="psw">كلمة المرور</label><br>
           <input type="password" name="password" id="psw" required><br>
-          <a href="#" onclick="login()">لا تملك حساب؟ انشاء حساب</a><br>
+          <a href="#" onclick="login('id01','id02')">لا تملك حساب؟ انشاء حساب</a><br>
           <label>
             <input type="checkbox" checked="checked" name="remember"> تذكرني
           </label><br>
